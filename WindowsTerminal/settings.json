@@ -48,7 +48,6 @@
     "list": [
       {
         "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-        "hidden": false,
         "name": "PowerShell",
         "source": "Windows.Terminal.PowershellCore"
       },
@@ -59,18 +58,12 @@
         "name": "Blahaj"
       },
       {
-        "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-        "hidden": true,
-        "name": "Windows PowerShell"
-      },
-      {
         "guid": "{c397f356-5e7b-55bc-956b-8cb4b9762c26}",
-        "hidden": false,
         "icon": "C:\\Users\\RCD\\OneDrive\\Pictures\\Saved Pictures\\Icons\\nix-logo-1.png",
         "name": "NixOS",
         "source": "Windows.Terminal.Wsl"
       },
+      // Hidden Profiles
       {
         "commandline": "%SystemRoot%\\System32\\cmd.exe",
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
@@ -91,9 +84,15 @@
       },
       {
         "guid": "{c9976139-66d5-578e-9a59-6295442d5896}",
-        "hidden": false,
+        "hidden": true,
         "name": "Developer PowerShell for VS 2022",
         "source": "Windows.Terminal.VisualStudio"
+      },
+      {
+        "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "hidden": true,
+        "name": "Windows PowerShell"
       }
     ]
   },
