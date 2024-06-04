@@ -14,16 +14,16 @@
       "keys": "ctrl+v"
     },
     {
+      "command": "find",
+      "keys": "ctrl+shift+f"
+    },
+    {
       "command": {
         "action": "splitPane",
         "split": "auto",
         "splitMode": "duplicate"
       },
       "keys": "alt+shift+d"
-    },
-    {
-      "command": "find",
-      "keys": "ctrl+shift+f"
     }
   ],
   "copyFormatting": "none",
@@ -65,6 +65,13 @@
         "name": "Windows PowerShell"
       },
       {
+        "guid": "{c397f356-5e7b-55bc-956b-8cb4b9762c26}",
+        "hidden": false,
+        "icon": "C:\\Users\\RCD\\OneDrive\\Pictures\\Saved Pictures\\Icons\\nix-logo-1.png",
+        "name": "NixOS",
+        "source": "Windows.Terminal.Wsl"
+      },
+      {
         "commandline": "%SystemRoot%\\System32\\cmd.exe",
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "hidden": true,
@@ -77,29 +84,16 @@
         "source": "Windows.Terminal.Azure"
       },
       {
-        "guid": "{4ca906b7-4fe6-548e-a86a-08f950ffeb98}",
+        "guid": "{d1d5b46f-ded9-5b12-be31-75ba8dc58c67}",
         "hidden": true,
         "name": "Developer Command Prompt for VS 2022",
         "source": "Windows.Terminal.VisualStudio"
       },
       {
-        "guid": "{c477aa0a-0fa1-57bd-bdae-2c24c6851266}",
-        "hidden": true,
+        "guid": "{c9976139-66d5-578e-9a59-6295442d5896}",
+        "hidden": false,
         "name": "Developer PowerShell for VS 2022",
         "source": "Windows.Terminal.VisualStudio"
-      },
-      {
-        "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
-        "hidden": false,
-        "name": "Ubuntu",
-        "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
-      },
-      {
-        "guid": "{c397f356-5e7b-55bc-956b-8cb4b9762c26}",
-        "hidden": false,
-        "icon": "C:\\Users\\RCD\\OneDrive\\Pictures\\Saved Pictures\\Icons\\nix-logo-1.png",
-        "name": "NixOS",
-        "source": "Windows.Terminal.Wsl"
       }
     ]
   },
@@ -364,7 +358,6 @@
       "name": "Catppuccin Frappe",
       "tab": {
         "background": "#303446FF",
-        "iconStyle": "default",
         "showCloseButton": "always",
         "unfocusedBackground": null
       },
