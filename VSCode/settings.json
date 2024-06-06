@@ -57,5 +57,6 @@
   "git.openRepositoryInParentFolders": "always",
   "window.commandCenter": false,
   "security.workspace.trust.enabled": false,
-  "workbench.colorTheme": "Catppuccin Frappé"
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "Lua.diagnostics.globals": ["vim"]
 }
