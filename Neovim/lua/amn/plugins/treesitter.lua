@@ -4,9 +4,6 @@ return {
 	config = function()
 		local utils = require("amn.utils")
 		local ts = utils.do_import("nvim-treesitter.configs")
-		if not ts then
-			return
-		end
 
 		ts.setup({
 			highlight = {

@@ -14,20 +14,8 @@ return {
 	},
 	config = function()
 		local utils = require("amn.utils")
-		if not utils then
-			vim.notify("Utils not found", vim.log.levels.ERROR)
-			return
-		end
-
 		local telescope = utils.do_import("telescope")
-		if not telescope then
-			return
-		end
-
 		local tb = utils.do_import("telescope.builtin")
-		if not tb then
-			return
-		end
 
 		telescope.setup({
 			defaults = {

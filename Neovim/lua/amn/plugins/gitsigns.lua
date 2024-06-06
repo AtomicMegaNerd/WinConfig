@@ -2,7 +2,10 @@ return {
 	"lewis6991/gitsigns.nvim",
 	dependencies = { "nvim-lua/plenary.nvim" },
 	config = function()
-		require("gitsigns").setup({
+		local utils = require("amn.utils")
+		local gitsigns = utils.do_import("gitsigns")
+
+		gitsigns.setup({
 			signs = {
 				add = { hl = "GitGutterAdd", text = "+" },
 				change = { hl = "GitGutterChange", text = "~" },

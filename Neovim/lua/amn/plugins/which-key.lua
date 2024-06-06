@@ -6,9 +6,6 @@ return {
 	config = function()
 		local utils = require("amn.utils")
 		local wk = utils.do_import("which-key")
-		if not wk then
-			return
-		end
 
 		wk.setup()
 	end,

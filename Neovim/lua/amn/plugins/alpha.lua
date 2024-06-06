@@ -4,16 +4,9 @@ return {
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		local utils = require("amn.utils")
-
 		local alpha = utils.do_import("alpha")
-		if not alpha then
-			return
-		end
-
 		local startify = utils.do_import("alpha.themes.startify")
-		if not startify then
-			return
-		end
+
 		startify.section.header.val = {
 			[[     ___   __                  _      __  ___                 _   __              __]],
 			[[    /   | / /_____  ____ ___  (_)____/  |/  /__  ____ _____ _/ | / /__  _________/ /]],

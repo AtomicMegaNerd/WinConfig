@@ -4,9 +4,6 @@ return {
 	config = function()
 		local utils = require("amn.utils")
 		local fidget = utils.do_import("fidget")
-		if not fidget then
-			return
-		end
 
 		fidget.setup({
 			notification = {

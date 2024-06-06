@@ -8,24 +8,9 @@ return {
 		local utils = require("amn.utils")
 
 		local nvim_lsp = utils.do_import("lspconfig")
-		if not nvim_lsp then
-			return
-		end
-
 		local lsp_signature = utils.do_import("lsp_signature")
-		if not lsp_signature then
-			return
-		end
-
 		local cmp_nvim_lsp = utils.do_import("cmp_nvim_lsp")
-		if not cmp_nvim_lsp then
-			return
-		end
-
 		local telescope_builtin = utils.do_import("telescope.builtin")
-		if not telescope_builtin then
-			return
-		end
 
 		-- Disable the panda
 		lsp_signature.setup({
@@ -48,12 +33,11 @@ return {
 
 		local servers = {
 			"pyright",
-			"rnix",
+			"nixd",
 			"ruff_lsp",
 			"bashls",
-			"omnisharp",
 			"gopls",
-			"golangci_lint_ls",
+			"ruff",
 		}
 
 		for _, lsp in ipairs(servers) do
