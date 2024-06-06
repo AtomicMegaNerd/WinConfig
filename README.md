@@ -27,3 +27,9 @@ The tricky aspect here is we have to delete the settings.json first.
 ```powershell
 New-Item -ItemType SymbolicLink -Target C:\Users\RCD\Code\Configs\WinConfig\WindowsTerminal\settings.json -Path C:\Users\RCD\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
 ```
+
+### Neovim
+
+```powershell
+New-Item -ItemType SymbolicLink -Target C:\Users\RCD\Code\Configs\WinConfig\Neovim -Path C:\Users\RCD\AppData\Local\nvim
+```
