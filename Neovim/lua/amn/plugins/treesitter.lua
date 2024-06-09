@@ -1,18 +1,16 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
-	cmd = "TSUpdate",
+	build = ":TSUpdate",
 	config = function()
 		local utils = require("amn.utils")
-		local ts = utils.do_import("nvim-treesitter.configs")
+		local configs = utils.do_import("nvim-treesitter.configs")
 
-		ts.setup({
+		configs.setup({
 			highlight = {
 				enable = true,
-				disable = {},
 			},
 			indent = {
 				enable = true,
-				disable = { "python", "go" },
 			},
 		})
 	end,
